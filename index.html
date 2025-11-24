@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rekap Gaji Karyawan STAFF & MEKANIK 2025</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2015");
+      background-size: cover;
+      background-position: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #eaeaea;
+    }
+
+    input[type="number"], input[type="text"], input[type="date"] {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .btn-edit { background-color: #2196F3; color: white; }
+    .btn-hapus { background-color: #f44336; color: white; }
+
+    .btn-edit:hover { background-color: #0b7dda; }
+    .btn-hapus:hover { background-color: #da190b; }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Rekap Gaji Karyawan STAFF & MEKANIK NOVEMBER-DESEMBER 2025</h2>
+
+<table id="tabelGaji">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Tgl masuk</th>
+      <th>Hari, tgl</th>
+      <th>Nama</th>
+      <th>NIK</th>
+      <th>Bagian</th>
+      <th>Gaji/Hari (Rp)</th>
+      <th>Total Hari</th>
+      <th>Total Gaji</th>
+      <th>Lembur (Rp)</th>
+      <th>Jam Lembur</th>
+      <th>Total Lembur</th>
+      <th>Grand Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>20/5/2024</td><td><input type="text" placeholder="Hari, tgl"></td><td>ADE MISBAH</td><td>202405001</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>2</td><td>21/5/2024</td><td><input type="text" placeholder="Hari, tgl"></td><td>NANANG</td><td>202405002</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>3</td><td>15/8/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>ROHILA</td><td>202508057</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>4</td><td>16/5/2024</td><td><input type="text" placeholder="Hari, tgl"></td><td>AJUM</td><td>202405004</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>5</td><td>8/8/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>SODIKIN</td><td>202508055</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>6</td><td>8/8/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>ARINI</td><td>202508054</td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>7</td><td>22/9/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>SUMIRA</td><td>202509046</td><td>STAFF QC</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+    <tr><td>8</td><td>07/10/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>RANDI</td><td>202510011</td><td>MEKANIK</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+
+     <tr><td>9</td><td>8/9/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>ISKANDAR</td><td>20250911</td><td>STAFF</td>
+      <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+      <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+      <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+      <tr><td>10</td><td>16/8/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>BANG PELAY</td><td>202509015</td><td>SECURITY</td>
+        <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+        <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+        <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+        <tr><td>11</td><td>03/11/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>MALIKA NAZWA ANDIA</td><td></td><td>STAFF</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+    
+        <tr><td>12</td><td>03/11/2025</td><td><input type="text" placeholder="Hari, tgl"></td><td>NAUFAL AFIF ALDIANSYAH</td><td></td><td>PKL</td>
+    <td><input type="number" class="gajiHari" value="0"></td><td><input type="number" class="totalHari" value="0"></td>
+    <td class="totalGaji">0</td><td><input type="number" class="lemburRp" value="0"></td><td><input type="number" class="jamLembur" value="0"></td>
+    <td class="totalLembur">0</td><td class="grandTotal">0</td></tr>
+    
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="12">Grand Total Keseluruhan</td><td id="grandTotalKeseluruhan">0</td></tr>
+  </tfoot>
+</table>
+
+<button class="btn-print" onclick="window.print()">🖨️ Cetak PDF</button>
+
+<script>
+function hitung() {
+  const rows = document.querySelectorAll("#tabelGaji tbody tr");
+  let totalSemua = 0;
+  rows.forEach(row => {
+    const gajiHari = parseFloat(row.querySelector(".gajiHari").value) || 0;
+    const totalHari = parseFloat(row.querySelector(".totalHari").value) || 0;
+    const lemburRp = parseFloat(row.querySelector(".lemburRp").value) || 0;
+    const jamLembur = parseFloat(row.querySelector(".jamLembur").value) || 0;
+    const totalGaji = gajiHari * totalHari;
+    const totalLembur = lemburRp * jamLembur;
+    const grandTotal = totalGaji + totalLembur;
+    row.querySelector(".totalGaji").textContent = totalGaji.toLocaleString("id-ID");
+    row.querySelector(".totalLembur").textContent = totalLembur.toLocaleString("id-ID");
+    row.querySelector(".grandTotal").textContent = grandTotal.toLocaleString("id-ID");
+    totalSemua += grandTotal;
+  });
+  document.getElementById("grandTotalKeseluruhan").textContent = totalSemua.toLocaleString("id-ID");
+}
+
+document.querySelectorAll("input").forEach(i => i.addEventListener("input", hitung));
+</script>
+
+<script>
+function exportToExcel() {
+  const table = document.getElementById("tabelGaji").cloneNode(true);
+  table.querySelectorAll("input").forEach(input => {
+    const td = input.parentElement;
+    td.textContent = input.value;
+  });
+
+  const html = `
+  <html xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      table, th, td {border: 1px solid #000; border-collapse: collapse; padding: 5px; text-align: center;}
+      th {background: #eaeaea;}
+      tfoot td {font-weight: bold; background: #f1f1f1;}
+    </style>
+  </head>
+  <body>${table.outerHTML}</body></html>`;
+
+  const blob = new Blob([html], { type: "application/vnd.ms-excel;charset=utf-8;" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "Rekap_Gaji_Staff_Mekanik_2025.xls";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+</script>
+
+<div style="margin-top:20px; text-align:center;">
+  <button onclick="exportToExcel()" style="padding:10px 20px; font-weight:bold;">Export ke Excel</button>
+</div>
+
+</body>
+</html>
